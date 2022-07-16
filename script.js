@@ -19,6 +19,8 @@ const superHeroAPI = `https://superheroapi.com/api.php/${apiToken}/`;
 
 // Define Constants here
 const superheroImage = document.querySelector('.superhero-image');
+const eyeColor = document.querySelector('.eye-color');
+
 
 // Function to get the Superhero
 const getSuperHero = (id, name) => {
@@ -28,15 +30,17 @@ const getSuperHero = (id, name) => {
             if (json.response == 'success') {
                 console.log(json);
                 // Define all variables to use
-                let image = json.image.url;
-                let name = json.name;
-                let bioName = json.biography["full-name"];
+                let imageEl = json.image.url;
+                let nameEl = json.name;
+                let bioNameEl = json.biography["full-name"];
 
+                // Appearance
+                let eyeColorEl = json.appearance["eye-color"];
+                eyeColor.innerText = "Eye Color : " + eyeColorEl;
                 // Send all elements to the document
-                heroImage.src = image;
-                superheroName.innerText = "Super-Hero : " + name;
-                realName.innerText = "Real Name : " + bioName;
-                console.log({ image, name, bioName });
+                heroImage.src = imageEl;
+                superheroName.innerText = "Super-Hero : " + nameEl;
+                realName.innerText = "Real Name : " + bioNameEl;
             } else {
                 console.log('Cannot get Hero at this time');
             }
