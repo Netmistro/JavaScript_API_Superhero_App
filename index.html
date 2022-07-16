@@ -5,16 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>JavaScript | Super Hero | App</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="header"></div>
+        <div class="header">
+            <h1 class="superhero-name">Super-Hero Name : Batman</h1>
+            <h3 class="real-name">Real Name : Bruce Wayne</h3>
+            <div class="superhero-image">
+                <!-- Image of Superhero -->
+                <img class="img" src='batman.webp' alt="Superhero" height=400>
+            </div>
+            <!-- Superhero name goes here -->
+        </div>
+        <!-- Superhero Info -->
         <div class="superhero-info">
-            <div class="superhero-image"> </div>
-            <div class="superhero-stats"> </div>
+            <h1 class="superhero-stats">Super-Hero Stats</h1>
+            <!-- Appearance -->
+            <div class="appearance">
+                <h2>Appearance</h2>
+                <p class="eye-color">Brown</p>
+                <p class="gender">Male</p>
+                <p class="hair-color">Brown</p>
+                <p class="height-imp">5' 6"</p>
+                <p class="height-metric">198cm</p>
+                <p class="weight-imp">295 lbs.</p>
+                <p class="weight-metric">133 kg</p>
+            </div>
+            <!-- Biography -->
+            <div class="biography">
+                <h2 class="superhero-bio">Super-Hero Biography</h2>
+                <p class="alignment">Good</p>
+                <p class="alter-ego">None</p>
+                <p class="place-of-birth">Trinidad</p>
+                <p class="publisher">DC Comics</p>
+            </div>
+            <!-- Power Stats here -->
+            <div class="power-stats">
+                <h2 class="superhero-power-stats">Super-Hero Power Stats</h2>
+                <p class="combat">None</p>
+                <p class="durability">None</p>
+                <p class="intelligence">None</p>
+                <p class="power">None</p>
+                <p class="speed">None</p>
+                <p class="strangth">None</p>
+            </div>
+            <!-- Work -->
+            <div class="work">
+                <h2 class="superhero-work">Super-Hero Occupation</h2>
+                <p class="base">None</p>
+                <p class="occupation">None</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

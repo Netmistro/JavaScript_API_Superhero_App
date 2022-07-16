@@ -1,5 +1,78 @@
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Main CNTR */
 .container {
     display: flex;
-    background-color: grey;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #E8E8E8;
     min-height: 100vh;
+}
+
+/* Main Header for 1st CNTR */
+.header {
+    margin: 1rem;
+    padding: 1rem;
+    border: red;
+    border-radius: 2rem;
+    background-color: #96939B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Image */
+img {
+    margin: 0.5rem;
+}
+
+.superhero-info {
+    margin: 1rem;
+    padding: 2rem;
+    border: red;
+    border-radius: 2rem;
+    background-color: #FC814A;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    color: #564256;
+}
+
+/* Media queries */
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+    .container {
+        font-size: smaller;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        color: white;
+        margin: 0.5rem;
+    }
 }
