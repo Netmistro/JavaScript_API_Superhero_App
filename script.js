@@ -14,7 +14,7 @@ const randomSuperHeroBtn = document.querySelector('.random-hero');
 const searchHeroBtn = document.querySelector('.search-hero');
 
 // Search Field
-const superHeroInput = document.getElementById('superHero-input');
+const superHeroInput = document.getElementById('superhero-input');
 
 // Header Elements
 let heroImage = document.querySelector('.img');
@@ -73,6 +73,8 @@ const getRandomSuperHero = () => {
             } else {
                 console.log('Cannot get Hero at this time');
             }
+        }).catch(function (err) {
+            console.log(err);
         });
 };
 
@@ -83,7 +85,7 @@ randomSuperHeroBtn.addEventListener('click', () => {
 
 // Search Superhero
 searchHeroBtn.addEventListener('click', (e) => {
-    console.log(superHeroInput.input);
+    console.log(superHeroInput.innerText);
 });
 
 const headerInformation = (json, superHeroID) => {
